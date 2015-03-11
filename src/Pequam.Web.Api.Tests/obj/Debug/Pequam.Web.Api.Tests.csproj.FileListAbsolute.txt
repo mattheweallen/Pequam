@@ -1,0 +1,4 @@
+C:\Development\Pequam\src\Pequam.Web.Api.Tests\bin\Debug\Pequam.Web.Api.Tests.dll
+C:\Development\Pequam\src\Pequam.Web.Api.Tests\bin\Debug\Pequam.Web.Api.Tests.pdb
+C:\Development\Pequam\src\Pequam.Web.Api.Tests\obj\Debug\Pequam.Web.Api.Tests.dll
+C:\Development\Pequam\src\Pequam.Web.Api.Tests\obj\Debug\Pequam.Web.Api.Tests.pdb

@@ -1,0 +1,12 @@
+C:\Development\Pequam\src\Pequam.Common\bin\Debug\AutoMapper.Net4.dll
+C:\Development\Pequam\src\Pequam.Common\bin\Debug\Pequam.Common.dll
+C:\Development\Pequam\src\Pequam.Common\bin\Debug\Pequam.Common.pdb
+C:\Development\Pequam\src\Pequam.Common\bin\Debug\AutoMapper.dll
+C:\Development\Pequam\src\Pequam.Common\bin\Debug\log4net.dll
+C:\Development\Pequam\src\Pequam.Common\bin\Debug\AutoMapper.pdb
+C:\Development\Pequam\src\Pequam.Common\bin\Debug\AutoMapper.xml
+C:\Development\Pequam\src\Pequam.Common\bin\Debug\AutoMapper.Net4.pdb
+C:\Development\Pequam\src\Pequam.Common\bin\Debug\log4net.xml
+C:\Development\Pequam\src\Pequam.Common\obj\Debug\Pequam.Common.csprojResolveAssemblyReference.cache
+C:\Development\Pequam\src\Pequam.Common\obj\Debug\Pequam.Common.dll
+C:\Development\Pequam\src\Pequam.Common\obj\Debug\Pequam.Common.pdb

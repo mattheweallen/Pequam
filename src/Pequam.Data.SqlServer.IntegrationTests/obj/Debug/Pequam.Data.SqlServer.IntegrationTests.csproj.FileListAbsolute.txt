@@ -1,0 +1,4 @@
+C:\Development\Pequam\src\Pequam.Data.SqlServer.IntegrationTests\bin\Debug\Pequam.Data.SqlServer.IntegrationTests.dll
+C:\Development\Pequam\src\Pequam.Data.SqlServer.IntegrationTests\bin\Debug\Pequam.Data.SqlServer.IntegrationTests.pdb
+C:\Development\Pequam\src\Pequam.Data.SqlServer.IntegrationTests\obj\Debug\Pequam.Data.SqlServer.IntegrationTests.dll
+C:\Development\Pequam\src\Pequam.Data.SqlServer.IntegrationTests\obj\Debug\Pequam.Data.SqlServer.IntegrationTests.pdb

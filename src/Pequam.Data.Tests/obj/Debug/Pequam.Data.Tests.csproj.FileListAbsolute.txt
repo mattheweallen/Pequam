@@ -1,0 +1,4 @@
+C:\Development\Pequam\src\Pequam.Data.Tests\bin\Debug\Pequam.Data.Tests.dll
+C:\Development\Pequam\src\Pequam.Data.Tests\bin\Debug\Pequam.Data.Tests.pdb
+C:\Development\Pequam\src\Pequam.Data.Tests\obj\Debug\Pequam.Data.Tests.dll
+C:\Development\Pequam\src\Pequam.Data.Tests\obj\Debug\Pequam.Data.Tests.pdb

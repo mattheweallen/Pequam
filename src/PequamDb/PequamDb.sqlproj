@@ -67,4 +67,10 @@
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Status.sql" />
+    <Build Include="Tables\Challenge.sql" />
+    <Build Include="Tables\ChallengeParticipant.sql" />
+    <Build Include="Tables\Participant.sql" />
+  </ItemGroup>
 </Project>

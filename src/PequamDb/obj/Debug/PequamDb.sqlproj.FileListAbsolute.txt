@@ -3,3 +3,7 @@ C:\Development\Pequam\src\PequamDb\bin\Debug\PequamDb.dll
 C:\Development\Pequam\src\PequamDb\bin\Debug\PequamDb.pdb
 C:\Development\Pequam\src\PequamDb\obj\Debug\PequamDb.dll
 C:\Development\Pequam\src\PequamDb\obj\Debug\PequamDb.pdb
+C:\Development\Pequam\src\PequamDb\obj\Debug\Model.xml
+C:\Development\Pequam\src\PequamDb\obj\Debug\refactor.xml
+C:\Development\Pequam\src\PequamDb\obj\Debug\postdeploy.sql
+C:\Development\Pequam\src\PequamDb\obj\Debug\predeploy.sql

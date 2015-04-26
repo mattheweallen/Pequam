@@ -39,9 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Activity.cs" />
-    <Compile Include="Entities\Type.cs" />
-    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\Status.cs" />
+    <Compile Include="Entities\Challenge.cs" />
+    <Compile Include="Entities\Participant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

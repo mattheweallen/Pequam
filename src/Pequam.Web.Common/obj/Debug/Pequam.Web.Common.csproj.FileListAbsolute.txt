@@ -1,4 +1,3 @@
-C:\Development\Pequam\src\Pequam.Web.Common\bin\Debug\AutoMapper.Net4.dll
 C:\Development\Pequam\src\Pequam.Web.Common\bin\Debug\Pequam.Web.Common.dll
 C:\Development\Pequam\src\Pequam.Web.Common\bin\Debug\Pequam.Web.Common.pdb
 C:\Development\Pequam\src\Pequam.Web.Common\bin\Debug\Iesi.Collections.dll

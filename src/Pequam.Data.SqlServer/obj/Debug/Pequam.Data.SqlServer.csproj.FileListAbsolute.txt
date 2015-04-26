@@ -1,4 +1,3 @@
-C:\Development\Pequam\src\Pequam.Data.SqlServer\bin\Debug\AutoMapper.Net4.dll
 C:\Development\Pequam\src\Pequam.Data.SqlServer\bin\Debug\Pequam.Data.SqlServer.dll
 C:\Development\Pequam\src\Pequam.Data.SqlServer\bin\Debug\Pequam.Data.SqlServer.pdb
 C:\Development\Pequam\src\Pequam.Data.SqlServer\bin\Debug\FluentNHibernate.dll

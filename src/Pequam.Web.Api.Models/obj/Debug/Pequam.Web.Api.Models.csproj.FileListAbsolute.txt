@@ -1,5 +1,0 @@
-C:\Development\Pequam\src\Pequam.Web.Api.Models\bin\Debug\Pequam.Web.Api.Models.dll
-C:\Development\Pequam\src\Pequam.Web.Api.Models\bin\Debug\Pequam.Web.Api.Models.pdb
-C:\Development\Pequam\src\Pequam.Web.Api.Models\obj\Debug\Pequam.Web.Api.Models.csprojResolveAssemblyReference.cache
-C:\Development\Pequam\src\Pequam.Web.Api.Models\obj\Debug\Pequam.Web.Api.Models.dll
-C:\Development\Pequam\src\Pequam.Web.Api.Models\obj\Debug\Pequam.Web.Api.Models.pdb

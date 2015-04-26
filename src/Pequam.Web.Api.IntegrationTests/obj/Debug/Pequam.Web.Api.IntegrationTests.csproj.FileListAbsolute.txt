@@ -1,4 +1,0 @@
-C:\Development\Pequam\src\Pequam.Web.Api.IntegrationTests\bin\Debug\Pequam.Web.Api.IntegrationTests.dll
-C:\Development\Pequam\src\Pequam.Web.Api.IntegrationTests\bin\Debug\Pequam.Web.Api.IntegrationTests.pdb
-C:\Development\Pequam\src\Pequam.Web.Api.IntegrationTests\obj\Debug\Pequam.Web.Api.IntegrationTests.dll
-C:\Development\Pequam\src\Pequam.Web.Api.IntegrationTests\obj\Debug\Pequam.Web.Api.IntegrationTests.pdb

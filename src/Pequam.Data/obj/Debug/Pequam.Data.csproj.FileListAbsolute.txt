@@ -1,5 +1,0 @@
-C:\Development\Pequam\src\Pequam.Data\bin\Debug\Pequam.Data.dll
-C:\Development\Pequam\src\Pequam.Data\bin\Debug\Pequam.Data.pdb
-C:\Development\Pequam\src\Pequam.Data\obj\Debug\Pequam.Data.csprojResolveAssemblyReference.cache
-C:\Development\Pequam\src\Pequam.Data\obj\Debug\Pequam.Data.dll
-C:\Development\Pequam\src\Pequam.Data\obj\Debug\Pequam.Data.pdb

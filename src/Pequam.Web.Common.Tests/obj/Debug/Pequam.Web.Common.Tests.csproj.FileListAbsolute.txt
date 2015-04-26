@@ -1,4 +1,0 @@
-C:\Development\Pequam\src\Pequam.Web.Common.Tests\bin\Debug\Pequam.Web.Common.Tests.dll
-C:\Development\Pequam\src\Pequam.Web.Common.Tests\bin\Debug\Pequam.Web.Common.Tests.pdb
-C:\Development\Pequam\src\Pequam.Web.Common.Tests\obj\Debug\Pequam.Web.Common.Tests.dll
-C:\Development\Pequam\src\Pequam.Web.Common.Tests\obj\Debug\Pequam.Web.Common.Tests.pdb

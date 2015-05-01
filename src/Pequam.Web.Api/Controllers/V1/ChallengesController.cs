@@ -2,10 +2,12 @@
 using System.Web.Http;
 using Pequam.Web.Api.Models;
 using Pequam.Web.Common.Routing;
+using Pequam.Web.Common;
 
 namespace Pequam.Web.Api.Controllers.V1
 {
     [ApiVersion1RoutePrefix("challenges")]
+    [UnitOfWorkActionFilter]
     public class ChallengesController : ApiController
     {
         [Route("", Name = "AddChallengeRoute")]

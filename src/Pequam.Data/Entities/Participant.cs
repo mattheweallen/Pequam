@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pequam.Data.Entities
 {
-    public class Participant
+    public class Participant : IVersionedEntity
     {
         public virtual long ParticipantId { get; set; }
         public virtual string FirstName { get; set; }

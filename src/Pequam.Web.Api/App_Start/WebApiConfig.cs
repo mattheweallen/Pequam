@@ -1,7 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
+using System.Web.Http.Dispatcher;
+using System.Web.Http.Routing;
+using Pequam.Web.Common;
+using Pequam.Web.Common.Routing;
 
 namespace Pequam.Web.Api
 {
@@ -9,16 +10,12 @@ namespace Pequam.Web.Api
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
+            var constraintsResolver = new DefaultInlineConstraintResolver();
+            constraintsResolver.ConstraintMap.Add("apiVersionConstraint", typeof(ApiVersionConstraint));
+            config.MapHttpAttributeRoutes(constraintsResolver);
 
-            // Web API routes
-            config.MapHttpAttributeRoutes();
-
-            config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
+            config.Services.Replace(typeof(IHttpControllerSelector),
+                new NamespaceHttpControllerSelector(config));
         }
     }
 }

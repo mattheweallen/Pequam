@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pequam.Data.Entities
 {
-    public class Challenge
+    public class Challenge : IVersionedEntity
     {
         private readonly IList<Participant> _participants = new List<Participant>();
 

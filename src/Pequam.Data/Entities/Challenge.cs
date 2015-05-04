@@ -8,7 +8,7 @@ namespace Pequam.Data.Entities
 {
     public class Challenge : IVersionedEntity
     {
-        private readonly IList<Participant> _participants = new List<Participant>();
+        private readonly IList<User> _participants = new List<User>();
 
         public virtual long ChallengeId { get; set; }
         public virtual string Subject { get; set; }
@@ -17,9 +17,9 @@ namespace Pequam.Data.Entities
         public virtual DateTime? CompletedDate { get; set; }
         public virtual Status Status { get; set; }
         public virtual DateTime CreatedDate { get; set; }
-        public virtual Participant CreatedBy { get; set; }
+        public virtual User CreatedBy { get; set; }
 
-        public virtual IList<Participant> Participants
+        public virtual IList<User> Participants
         {
             get { return _participants; }
         }

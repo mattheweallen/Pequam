@@ -8,11 +8,11 @@ using Ninject.Activation;
 using Ninject.Web.Common;
 using Pequam.Common;
 using Pequam.Common.Logging;
-//using Pequam.Common.Security;
-//using Pequam.Common.TypeMapping;
-//using Pequam.Data.QueryProcessors;
+using Pequam.Common.Security;
+using Pequam.Common.TypeMapping;
+using Pequam.Data.QueryProcessors;
 using Pequam.Data.SqlServer.Mapping;
-//using Pequam.Data.SqlServer.QueryProcessors;
+using Pequam.Data.SqlServer.QueryProcessors;
 //using Pequam.Web.Api.AutoMappingConfiguration;
 using Pequam.Web.Api.Controllers.V1;
 //using Pequam.Web.Api.InquiryProcessing;
@@ -22,7 +22,7 @@ using Pequam.Web.Api.Controllers.V1;
 //using Pequam.Web.Api.MaintenanceProcessing;
 //using Pequam.Web.Api.Security;
 using Pequam.Web.Common;
-//using Pequam.Web.Common.Security;
+using Pequam.Web.Common.Security;
 
 namespace Pequam.Web.Api
 {
@@ -36,9 +36,17 @@ namespace Pequam.Web.Api
         private void AddBindings(IKernel container)
         {
             ConfigureLog4net(container);
+            ConfigureUserSession(container);
             ConfigureNHibernate(container);
+            ConfigureAutoMapper(container);
 
             container.Bind<IDateTime>().To<DateTimeAdapter>().InSingletonScope();
+            container.Bind<IAddChallengeQueryProcessor>().To<AddChallengeQueryProcessor>().InRequestScope();
+        }
+
+        private void ConfigureAutoMapper(IKernel container)
+        {
+            container.Bind<IAutoMapper>().To<AutoMapperAdapter>().InSingletonScope();
         }
 
         private void ConfigureLog4net(IKernel container)
@@ -74,6 +82,13 @@ namespace Pequam.Web.Api
             }
 
             return sessionFactory.GetCurrentSession();
+        }
+
+        private void ConfigureUserSession(IKernel container)
+        {
+            var userSession = new UserSession();
+            container.Bind<IUserSession>().ToConstant(userSession).InSingletonScope();
+            container.Bind<IWebUserSession>().ToConstant(userSession).InSingletonScope();
         }
     }
 }

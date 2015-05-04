@@ -6,9 +6,9 @@
     [CompletedDate] DATETIME2 (7)  NULL,
     [StatusId]      BIGINT         NOT NULL,
     [CreatedDate]   DATETIME2 (7)  NOT NULL,
-    [CreatedParticipantId]   bigint  NOT NULL,
+    [CreatedUserId]   bigint  NOT NULL,
     [ts]            rowversion     NOT NULL,
     PRIMARY KEY CLUSTERED ([ChallengeId] ASC),
     FOREIGN KEY ([StatusId]) REFERENCES [dbo].[Status] ([StatusId]),
-    FOREIGN KEY ([CreatedParticipantId]) REFERENCES [dbo].[Participant] ([ParticipantId])
+	FOREIGN KEY ([CreatedUserId]) REFERENCES [dbo].[User] ([UserId])
 );

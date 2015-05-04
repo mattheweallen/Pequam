@@ -12,7 +12,7 @@ namespace Pequam.Web.Api.Controllers.V1
     {
         [Route("", Name = "AddChallengeRoute")]
         [HttpPost]
-        public Challenge AddChallenge(HttpRequestMessage requestMessage, Challenge newChallenge)
+        public Challenge AddChallenge(HttpRequestMessage requestMessage, NewChallenge newChallenge)
         {
             return new Challenge
             {

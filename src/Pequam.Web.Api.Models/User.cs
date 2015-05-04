@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Pequam.Web.Api.Models
 {
-    public class Participant
+    public class User
     {
         private List<Link> _links;
 
-        public long ParticipantId { get; set; }
+        public long UserId { get; set; }
         public string Username { get; set; }
         public string Firstname { get; set; }
         public string Lastname { get; set; }

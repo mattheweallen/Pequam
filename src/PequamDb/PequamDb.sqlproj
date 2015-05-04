@@ -70,7 +70,7 @@
   <ItemGroup>
     <Build Include="Tables\Status.sql" />
     <Build Include="Tables\Challenge.sql" />
-    <Build Include="Tables\ChallengeParticipant.sql" />
-    <Build Include="Tables\Participant.sql" />
+    <Build Include="Tables\ChallengeUser.sql" />
+    <Build Include="Tables\User.sql" />
   </ItemGroup>
 </Project>

@@ -15,13 +15,13 @@ namespace Pequam.Data.SqlServer.Mapping
             Map(x => x.CreatedDate).Not.Nullable();
 
             References(x => x.Status, "StatusId");
-            References(x => x.CreatedBy, "CreatedParticipantId");
+            References(x => x.CreatedBy, "CreatedUserId");
 
             HasManyToMany(x => x.Participants)
                 .Access.ReadOnlyPropertyThroughCamelCaseField(Prefix.Underscore)
-                .Table("ChallengeParticipant")
+                .Table("ChallengeUser")
                 .ParentKeyColumn("ChallengeId")
-                .ChildKeyColumn("ParticipantId");
+                .ChildKeyColumn("UserId");
         }
     }
 }

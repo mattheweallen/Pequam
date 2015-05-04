@@ -17,7 +17,7 @@ namespace Pequam.Web.Api.Models
         public DateTime? CreatedDate { get; set; }
         public DateTime? CompletedDate { get; set; }
         public Status Status { get; set; }
-        public List<Participant> Participants { get; set; }
+        public List<User> Participants { get; set; }
         public List<Link> Links
         {
             get { return _links ?? (_links = new List<Link>());  }

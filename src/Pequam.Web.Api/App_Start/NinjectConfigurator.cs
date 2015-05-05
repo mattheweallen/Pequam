@@ -13,7 +13,7 @@ using Pequam.Common.TypeMapping;
 using Pequam.Data.QueryProcessors;
 using Pequam.Data.SqlServer.Mapping;
 using Pequam.Data.SqlServer.QueryProcessors;
-//using Pequam.Web.Api.AutoMappingConfiguration;
+using Pequam.Web.Api.AutoMappingConfiguration;
 using Pequam.Web.Api.Controllers.V1;
 //using Pequam.Web.Api.InquiryProcessing;
 //using Pequam.Web.Api.LegacyProcessing;
@@ -47,6 +47,31 @@ namespace Pequam.Web.Api
         private void ConfigureAutoMapper(IKernel container)
         {
             container.Bind<IAutoMapper>().To<AutoMapperAdapter>().InSingletonScope();
+            container.Bind<IAutoMapperTypeConfigurator>()
+                .To<StatusEntityToStatusAutoMapperTypeConfigurator>()
+                .InSingletonScope();
+            container.Bind<IAutoMapperTypeConfigurator>()
+                .To<StatusToStatusEntityAutoMapperTypeConfigurator>()
+                .InSingletonScope();
+            container.Bind<IAutoMapperTypeConfigurator>()
+                .To<UserEntityToUserAutoMapperTypeConfigurator>()
+                .InSingletonScope();
+            container.Bind<IAutoMapperTypeConfigurator>()
+                .To<UserToUserEntityAutoMapperTypeConfigurator>()
+                .InSingletonScope();
+            container.Bind<IAutoMapperTypeConfigurator>()
+                .To<NewChallengeToChallengeEntityAutoMapperTypeConfigurator>()
+                .InSingletonScope();
+            container.Bind<IAutoMapperTypeConfigurator>()
+                .To<ChallengeEntityToChallengeAutoMapperTypeConfigurator>()
+                .InSingletonScope();
+            //container.Bind<IAutoMapperTypeConfigurator>()
+            //    .To<ChallengeToChallengeEntityAutoMapperTypeConfigurator>()
+            //    .InSingletonScope();
+
+            //container.Bind<IAutoMapperTypeConfigurator>()
+            //    .To<NewChallengeV2ToChallengeEntityAutoMapperTypeConfigurator>()
+            //    .InRequestScope();
         }
 
         private void ConfigureLog4net(IKernel container)

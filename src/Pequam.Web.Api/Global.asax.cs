@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Routing;
 using Pequam.Common.Logging;
 using Pequam.Web.Common;
+using Pequam.Common.TypeMapping;
 
 namespace Pequam.Web.Api
 {
@@ -14,6 +15,9 @@ namespace Pequam.Web.Api
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
+
+            new AutoMapperConfigurator().Configure(
+                WebContainerManager.GetAll<IAutoMapperTypeConfigurator>());
         }
 
         protected void Application_Error()

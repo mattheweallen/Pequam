@@ -25,8 +25,10 @@ namespace Pequam.Data.SqlServer.QueryProcessors
         {
             challenge.CreatedDate = _dateTime.UtcNow;
             challenge.Status = _session.QueryOver<Status>().Where(x => x.Name == "Not Started").SingleOrDefault();
-            challenge.CreatedBy =
-                _session.QueryOver<User>().Where(x => x.UserName == _userSession.Username).SingleOrDefault();
+            //challenge.CreatedBy =
+            //    _session.QueryOver<User>().Where(x => x.UserName == _userSession.Username).SingleOrDefault();
+
+            challenge.CreatedBy = _session.Get<User>(1L); //hack
 
             if (challenge.Participants != null && challenge.Participants.Any())
             {

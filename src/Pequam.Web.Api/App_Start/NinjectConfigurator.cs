@@ -19,7 +19,7 @@ using Pequam.Web.Api.Controllers.V1;
 //using Pequam.Web.Api.LegacyProcessing;
 //using Pequam.Web.Api.LegacyProcessing.ProcessingStrategies;
 //using Pequam.Web.Api.LinkServices;
-//using Pequam.Web.Api.MaintenanceProcessing;
+using Pequam.Web.Api.MaintenanceProcessing;
 //using Pequam.Web.Api.Security;
 using Pequam.Web.Common;
 using Pequam.Web.Common.Security;
@@ -42,6 +42,7 @@ namespace Pequam.Web.Api
 
             container.Bind<IDateTime>().To<DateTimeAdapter>().InSingletonScope();
             container.Bind<IAddChallengeQueryProcessor>().To<AddChallengeQueryProcessor>().InRequestScope();
+            container.Bind<IAddChallengeMaintenanceProcessor>().To<AddChallengeMaintenanceProcessor>().InRequestScope();
         }
 
         private void ConfigureAutoMapper(IKernel container)

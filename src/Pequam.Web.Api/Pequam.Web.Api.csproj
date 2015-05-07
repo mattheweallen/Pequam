@@ -130,6 +130,8 @@
     </Compile>
     <Compile Include="MaintenanceProcessing\AddChallengeMaintenanceProcessor.cs" />
     <Compile Include="MaintenanceProcessing\IAddChallengeMaintenanceProcessor.cs" />
+    <Compile Include="MaintenanceProcessing\ChallengeCreatedActionResult.cs" />
+    <Compile Include="MaintenanceProcessing\LocationLinkCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pequam.Web.Api.Models
 {
-    public class Challenge
+    public class Challenge : ILinkContaining
     {
         private List<Link> _links;
 

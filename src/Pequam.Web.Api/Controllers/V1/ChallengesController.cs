@@ -4,6 +4,7 @@ using Pequam.Web.Api.Models;
 using Pequam.Web.Common.Routing;
 using Pequam.Web.Common;
 using Pequam.Web.Api.MaintenanceProcessing;
+using Pequam.Common;
 
 namespace Pequam.Web.Api.Controllers.V1
 {
@@ -20,6 +21,7 @@ namespace Pequam.Web.Api.Controllers.V1
 
         [Route("", Name = "AddChallengeRoute")]
         [HttpPost]
+        [Authorize(Roles = Constants.RoleNames.Admin)]
         public IHttpActionResult AddChallenge(HttpRequestMessage requestMessage, NewChallenge newChallenge)
         {
             var challenge = _addChallengeMaintenanceProcessor.AddChallenge(newChallenge);

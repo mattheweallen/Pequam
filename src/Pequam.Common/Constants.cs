@@ -46,7 +46,7 @@
 
         public static class RoleNames
         {
-            public const string Manager = "Manager";
+            public const string Admin = "Admin";
             public const string SeniorWorker = "SeniorWorker";
             public const string JuniorWorker = "JuniorWorker";
         }
